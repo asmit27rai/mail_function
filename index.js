@@ -16,16 +16,7 @@ app.post('/send-email', async (req, res) => {
     from: 'raiasmit10@gmail.com',
     subject: subject || 'No Subject',
     text: message,
-    html: `
-      <div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6;">
-        <h2 style="color: #4CAF50;">Hello, ${name || 'there'}!</h2>
-        <p>${message}</p>
-        <br/>
-        <p>Best Regards,</p>
-        <p><strong>EventMaster</strong></p>
-        <p>Contact us: <a href="mailto:raiasmit10@gmail.com">raiasmit10@gmail.com</a></p>
-      </div>
-    `,
+    html: `${message}`,
   };
 
   try {
