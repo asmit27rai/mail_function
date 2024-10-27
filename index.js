@@ -3,8 +3,7 @@ const sgMail = require('@sendgrid/mail');
 const cors = require('cors');
 require('dotenv').config();
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
+sgMail.setApiKey("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");
 const app = express();
 app.use(cors());
 app.use(express.json());
